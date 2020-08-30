@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>Document manager</title>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/pre-load.js"></script>
+    </head>
+
+    <body class="body-initial">
+        <div class="container">
+            <header>
+                <div class="logos">
+                    <img src="img/menu.svg" alt="menu" class="logo" id="menu">
+                    <img src="img/logo.svg" alt="logo" class="logo" id="main-logo">
+                </div>
+                
+                <form action="#" class="search">
+                    <input type="text" id="main-input" class="search__input" placeholder="Search documents">
+                    <button class="search__button" id="main-btn">
+                        <img class="search__icon" src="img/glass.svg">
+                           
+                    </img>
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav__user">
+                        <img src="img/user_image.jpg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name" id="user_email"></span>
+                    </div>
+                    <div class="user-nav__icon-box" id="logout">
+                            <img class="user-nav__icon" src="img/logout.svg" alt="logout">
+                               
+                            </img>
+                        </div>
+                </nav>
+            </header>
+                <div class="messages">
+                    <nav class="sidebar">
+                        <div class="messages_title">
+                            <h2 class="heading-2--dark" id="site__title">New docs</h2>
+                        </div>
+                        <ul class="side-nav" id="side-nav-msgs" data-id="ul_msgs">
+
+                    </nav>
+                </div>
+                <div class="content" id="main_content">
+
+        </div>
+                <div class="admin_box" id="a_box">  
+                    <nav class="sidebar">
+                        <ul class="side-nav" id="side-nav-main">
+                                <li class="side-nav__item nav__item side-nav__item--active" id="nav__item--id">
+                                        <a href="#" class="side-nav__link" id="newDocs">
+                                            <img src="img/contract.svg" class="side-nav__icon" id="svg__icon">
+                                                
+                                        </img>
+                                            <span id="nav__item--span side-nav__item--active">New docs</span>
+                                        </a>
+                                    </li>
+                                    <li class="side-nav__item nav__item dc ad" id="nav__item--id">
+                                        <a href="#" class="side-nav__link" id="documentCreation">
+                                            <img src="img/contract.svg" class="side-nav__icon" id="svg__icon">
+                                                
+                                            </img>
+                                            <span id="nav__item--span">Create Doc</span>
+                                        </a>
+                                    </li>
+                                    <li class="side-nav__item nav__item dc ad" id="nav__item--id">
+                                        <a href="#" class="side-nav__link" id="showYourDocs">
+                                            <img src="img/contract.svg" class="side-nav__icon" id="svg__icon">
+                                                
+                                            </img>
+                                            <span id="nav__item--span">Your docs</span>
+                                        </a>
+                                    </li>
+                                    <li class="side-nav__item nav__item ad" id="nav__item--id">
+                                        <a href="#" class="side-nav__link" id="deleteDocument">
+                                            <img src="img/contract.svg" class="side-nav__icon" id="svg__icon">
+                                                        
+                                                    </img>
+                                            <span id="nav__item--span">Delete docs</span>
+                                        </a>
+                                    </li>
+                            <li class="side-nav__item nav__item dc ad" id="nav__item--id">
+                                <a href="#" class="side-nav__link" id="createGroup">
+                                    <img src="img/group-menu.svg" class="side-nav__icon" id="svg__icon">
+                                                
+                                     </img>
+                                    <span id="nav__item--span">Create Group</span>
+                                </a>
+                            </li>
+                            <li class="side-nav__item nav__item dc ad" id="nav__item--id">
+                                <a href="#" class="side-nav__link" id="seeYourGroups">
+                                    <img src="img/group-menu.svg" class="side-nav__icon" id="svg__icon">
+                                                
+                                            </img>
+                                    <span id="nav__item--span">Your groups</span>
+                                </a>
+                            </li>
+                        
+                            <li class="side-nav__item nav__item" id="nav__item--id">
+                                    <a href="#" class="side-nav__link" id="history">
+                                        <img src="img/history.svg" class="side-nav__icon" id="svg__icon">
+                                                
+                                            </img>
+                                        <span id="nav__item--span">History</span>
+                                    </a>
+                                </li>
+                            <li class="side-nav__item nav__item ad" id="nav__item--id">
+                                <a href="#" class="side-nav__link" id="userCreation">
+                                    <img src="img/profile.svg" class="side-nav__icon" id="svg__icon">
+                                                
+                                </img>
+                                    <span id="nav__item--span">Create User</span>
+                                </a>
+                            </li>
+                            <li class="side-nav__item nav__item ad" id="nav__item--id">
+                                <a href="#" class="side-nav__link" id="updateForm">
+                                    <img src="img/profile.svg" class="side-nav__icon" id="svg__icon">
+                                                
+                                            </img>
+                                    <span id="nav__item--span">Update User</span>
+                                </a>
+                            </li>
+                            <li class="side-nav__item nav__item" id="nav__item--id">
+                                <a href="#" class="side-nav__link" id="changePass">
+                                    <img src="img/profile.svg" class="side-nav__icon" id="svg__icon">
+                                                
+                                            </img>
+                                    <span id="nav__item--span">Password</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    </div>
+
+    <script type="text/javascript" src="js/bundle.js"></script></body>
+
+    </html>

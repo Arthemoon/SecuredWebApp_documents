@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; 
+}
+
+html 
+{
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; 
+  }   
+}
+
+@media only screen and (max-width: 56em) {
+  .container {
+    width: 75vw !important;
+  }
+  
+}   
+
+@media only screen and (max-width: 47em) {
+
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #second_part {
+    flex: 0 0 95%;
+  }
+  #img_part {
+    display:none;
+  }
+
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+}
+
+@media only screen and (max-width: 31em) {
+  .container {
+    width: 85vw !important;
+  }
+}
+body {
+height: 100vh;
+width: 100vw;
+font-family: 'lato', sans-serif;
+color: #fff;  
+background-color: #2e2e2e; 
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container {
+  height: 60vh;
+  width: 60vw;
+  background-color: white;
+  display: flex;
+  border-radius: 50px;
+}
+
+.part {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.form input[type="password"], .form input[type="email"], .form input[type="submit"] {
+  width: 100%;
+}
+
+.form-login label,
+.form-login input[type="email"],
+.form-login input[type="password"],
+.form-login input[type="submit"] {
+  border-radius: 2rem;
+  padding: 1rem;
+  color: #3A3F44;  
+}
+
+.form-login input[type="email"], .form-login input[type="password"] {
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+.form-login input[type="email"]:focus, .form-login input[type="email"]:hover, .form-login input[type="password"]:focus, .form-login input[type="password"]:hover {
+  background-color: #eeeeee;
+}
+.form-login input[type="submit"] {
+  background-color: /*#00B9BC;*/#F4E3A4;
+  color: /*#eee;*/ black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.form-login input[type="submit"]:focus, .form-login input[type="submit"]:hover {
+  background-color: /*#197071;*/#E8C239;
+}
+
+h2 {
+    color: black;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+#psw-error {
+  color: red;
+  display: none;
+  font-size: 1.5rem;
+}

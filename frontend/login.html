@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Login</title>
+
+        <link rel="stylesheet" href="css/login_style2.css">
+    </head>
+
+<body>
+    <div class="container">
+        <div class="part" id="img_part">
+            <img src="img/user_image.jpg" id="login_img"/>
+        </div>
+        <div class="part" id="second_part">
+            <form class="form form-login">
+                <h2>User Login</h2>
+                <input type="email" id="login-email" placeholder="Your email" required minlength="3" maxlength="40" autocomplete="off"/>
+                <input type="password" id="login-password" placeholder="Your password" minlength="3" maxlength="40" required autocomplete="off"/>
+                <div id="psw-error">
+                    <span>You entered wrong email or password.</span>
+                </div>
+                <input type="submit" class="btn" id="sub_login" value="Login"></input>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
